@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_image_picker"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite">
+
+    <include
+        android:id="@+id/image_picker_toolbar"
+        layout="@layout/toolbar"/>
+
+    <HorizontalScrollView
+        android:id="@+id/image_picker_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_below="@id/image_picker_toolbar"
+        android:layout_marginTop="6dp"
+        android:background="@color/colorWhite"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/image_picker_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|left"
+            android:orientation="horizontal">
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+    <Button
+        android:id="@+id/add_image_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/image_picker_scrollview"
+        android:layout_margin="5dp"
+        android:background="@color/colorLightBlue"
+        android:onClick="addImageClick"
+        android:text="@string/legg_til_bilde"
+        android:textColor="@color/colorWhite"
+        />
+
+    <Button
+        android:id="@+id/capture_image_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/add_image_button"
+        android:layout_margin="5dp"
+        android:background="@color/colorLightBlue"
+        android:onClick="captureImageClick"
+        android:text="@string/ta_bilde"
+        android:textColor="@color/colorWhite"
+        />
+
+    <TextView
+        android:id="@+id/library_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/capture_image_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Choose image loading library"
+        android:textColor="@color/colorBlack"
+        />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/library_label"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical"
+        android:layout_marginTop="16dp"
+        >
+
+        <RadioButton
+            android:id="@+id/no_library_radio_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onRadioButtonClicked"
+            android:checked="true"
+            android:text="No library"/>
+
+        <RadioButton
+            android:id="@+id/manual_processing_radio_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onRadioButtonClicked"
+            android:text="Manual processing"/>
+
+
+        <RadioButton
+            android:id="@+id/picasso_radio_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onRadioButtonClicked"
+            android:text="Picasso"/>
+
+        <RadioButton
+            android:id="@+id/glide_radio_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onRadioButtonClicked"
+            android:text="Glide"/>
+
+    </RadioGroup>
+
+
+</RelativeLayout>

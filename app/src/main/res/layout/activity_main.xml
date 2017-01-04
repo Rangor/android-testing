@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/home_toolbar"
+        layout="@layout/toolbar"/>
+
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:context="com.test.demo.myapp.MainActivity">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="startNotificationTester"
+                android:text="Notification Testing"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="startGlideTester"
+                android:text="Glide Testing"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="startPresenterTester"
+                android:text="Presenter Testing"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="startReprintTesting"
+                android:text="Reprint Testing"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="startMemoryTesting"
+                android:text="Memory Testing"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="startSecureStorageTesting"
+                android:text="Secure Storage Testing"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="startImagePickerActivity"
+                android:text="Image Picker Testing"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="startDialogTestingActivity"
+                android:text="Dialog Testing"/>
+
+            <Button
+                android:id="@+id/pullToRefreshButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onPullToRefreshClick"
+                android:text="Pull to refresh"/>
+
+            <Button
+                android:id="@+id/picassoTestingButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="onPicassoClick"
+                android:text="Picasso Testing"
+                />
+
+            <Button
+                android:id="@+id/barcode_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="barcodeOnClick"
+                android:text="Barcode"/>
+
+            <Button
+                android:id="@+id/image_fetcher_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="myImageFetcherClick"
+                android:text="My Image Fetcher"/>
+
+            <Button
+                android:id="@+id/start_textview_test_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="textViewTestingClick"
+                android:text="TextView Testing"/>
+
+            <Button
+                android:id="@+id/start_fragment_testing_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="fragmentTestButtonClick"
+                android:text="Fragments Testing"/>
+
+            <Button
+                android:id="@+id/start_scrolling_activity_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="startScrollingActivityClick"
+                android:text="Scrolling Activity"/>
+
+            <Button
+                android:id="@+id/start_list_activity_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="startListActivityClick"
+                android:text="List Activity"/>
+
+            <Button
+                android:id="@+id/start_cards_activity_button"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:onClick="startCardsActivity"
+                android:text="Cards Activity"/>
+
+            <Button
+                android:id="@+id/start_programmatic_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="startProgrammaticActivity"
+                android:text="Programmatic Activity"/>
+
+            <Button
+                android:id="@+id/start_play_replica_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="startPlayStoreReplicaActivity"
+                android:text="Play Store Replica"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="startChromeCustomTabActivity"
+                android:text="Chrome Custom Tab"/>
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
