@@ -29,6 +29,12 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:onClick="simpleAlertDialog"
+        android:text="Simple Alert Dialog"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:onClick="smallTextDialog"
         android:text="Small Text"/>
 

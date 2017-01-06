@@ -37,6 +37,19 @@ public class DialogTestingActivity extends AppCompatActivity {
         resultImage = (ImageView) findViewById(R.id.valueImageView);
     }
 
+    public void simpleAlertDialog(View target) {
+// 1. Instantiate an AlertDialog.Builder with its constructor
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+
+// 2. Chain together various setter methods to set the dialog characteristics
+        builder.setMessage("This is the message")
+                .setTitle("This is the title");
+
+// 3. Get the AlertDialog from create()
+        AlertDialog dialog = builder.create();
+        dialog.show();
+    }
+
     public void smallSelection(View target) {
         String[] selection = {"Ost", "Kjøtt", "Kylling"};
         dialogGenerator.selectionDialog(getSupportFragmentManager(), selection, new DialogGenerator.DialogCallback() {
