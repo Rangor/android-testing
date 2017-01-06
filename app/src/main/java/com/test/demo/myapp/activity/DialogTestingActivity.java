@@ -1,5 +1,6 @@
 package com.test.demo.myapp.activity;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.res.Resources;
 import android.database.Cursor;
@@ -44,6 +45,12 @@ public class DialogTestingActivity extends AppCompatActivity {
 // 2. Chain together various setter methods to set the dialog characteristics
         builder.setMessage("This is the message")
                 .setTitle("This is the title");
+
+        builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+            public void onClick(DialogInterface dialog, int id) {
+                dialog.dismiss();
+            }
+        });
 
 // 3. Get the AlertDialog from create()
         AlertDialog dialog = builder.create();
