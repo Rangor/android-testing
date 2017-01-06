@@ -39,10 +39,8 @@ public class DialogTestingActivity extends AppCompatActivity {
     }
 
     public void simpleAlertDialog(View target) {
-// 1. Instantiate an AlertDialog.Builder with its constructor
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
 
-// 2. Chain together various setter methods to set the dialog characteristics
         builder.setMessage("This is the message")
                 .setTitle("This is the title");
 
@@ -52,7 +50,6 @@ public class DialogTestingActivity extends AppCompatActivity {
             }
         });
 
-// 3. Get the AlertDialog from create()
         AlertDialog dialog = builder.create();
         dialog.show();
     }
