@@ -4,6 +4,7 @@ package com.test.demo.myapp;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.test.demo.myapp.business.InputStreamHelper;
 import com.test.demo.myapp.data.Boat;
+import com.test.demo.myapp.data.BoatCar;
 import com.test.demo.myapp.data.Car;
 import com.test.demo.myapp.data.ElectricEngine;
 import com.test.demo.myapp.data.PetrolEngine;
@@ -64,6 +65,7 @@ public class JacksonTesting {
 
         List<Car> cars = new ArrayList<>();
         List<Boat> boats = new ArrayList<>();
+        List<BoatCar> boatCars = new ArrayList<>();
 
         for (Transportation transport : transportationArray) {
             switch (transport.type) {
@@ -73,12 +75,14 @@ public class JacksonTesting {
                 case "Boat":
                     boats.add((Boat) transport);
                     break;
+                case "Boat-Car":
+                    boatCars.add((BoatCar) transport);
+                    break;
             }
         }
 
         assertTrue(boats.size() == 1);
         assertTrue(boats.get(0).classOfBoat.equalsIgnoreCase("Sailboat"));
-
 
         assertTrue(cars.size() == 1);
         assertTrue(cars.get(0).numberOfWheels == 6);
@@ -87,5 +91,8 @@ public class JacksonTesting {
 
         PetrolEngine engine = (PetrolEngine) cars.get(0).engine;
         assertTrue(engine.volume == 1.6);
+
+        assertTrue(boatCars.size() == 1);
+        assertTrue(boatCars.get(0).boatSpeed == 10);
     }
 }

@@ -1,0 +1,19 @@
+[
+{
+  "type":"Car",
+  "numberOfWheels":6,
+  "engine" : {
+    "type":"PetrolEngine",
+    "volume":1.6
+  }
+},
+{
+  "type":"Boat",
+  "classOfBoat":"Sailboat"
+},
+{
+  "type":"Boat-Car",
+  "carSpeed":5,
+  "boatSpeed": 10
+}
+]
