@@ -40,7 +40,7 @@ public class ListActivity extends AppCompatActivity {
         myDataset[0] = headerObject;
         myDataset[1] = itemObject;
         myDataset[2] = itemObject;
-        mAdapter = new MyAdapter(myDataset);
+        mAdapter = new MyAdapter(myDataset, getApplicationContext());
         mRecyclerView.setAdapter(mAdapter);
     }
 }

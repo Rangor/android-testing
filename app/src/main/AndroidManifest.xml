@@ -99,6 +99,8 @@
         </activity>
         <activity android:name=".activity.NotificationTesterActivity">
         </activity>
+        <activity android:name=".activity.RecyclerTestActivity">
+        </activity>
     </application>
 
 </manifest>

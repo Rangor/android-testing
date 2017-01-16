@@ -19,6 +19,7 @@ import com.test.demo.myapp.activity.PicassoTestingActvity;
 import com.test.demo.myapp.activity.PlayStoreReplicaActivity;
 import com.test.demo.myapp.activity.PresenterTesterActivity;
 import com.test.demo.myapp.activity.PullToRefreshActivity;
+import com.test.demo.myapp.activity.RecyclerTestActivity;
 import com.test.demo.myapp.activity.ReprintTestActivity;
 import com.test.demo.myapp.activity.ScrollingActivity;
 import com.test.demo.myapp.activity.TextViewTesterActivity;
@@ -111,6 +112,10 @@ public class MainActivity extends AppCompatActivity {
 
     public void startNotificationTester(View target){
         startActivity(new Intent(this, NotificationTesterActivity.class));
+    }
+
+    public void startRecycleViewTester(View target){
+        startActivity(new Intent(this, RecyclerTestActivity.class));
     }
 
     private void deepLinkUriLaunch(){

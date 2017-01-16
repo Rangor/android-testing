@@ -1,7 +1,7 @@
 package com.test.demo.myapp.activity;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
@@ -25,9 +25,10 @@ public class PicassoTestingActvity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_picasso_testing_actvity);
-
         imageView = (ImageView) findViewById(R.id.imageView);
-        Picasso.with(this).load("").into(imageView);
+        Picasso.with(this)
+                .load("https://appear.in/images/favicon.png")
+                .into(imageView);
     }
 
     public void testPicassoIntercept(View target) {
