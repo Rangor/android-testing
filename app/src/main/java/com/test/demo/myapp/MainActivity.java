@@ -2,8 +2,8 @@ package com.test.demo.myapp;
 
 import android.content.Intent;
 import android.net.Uri;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
 import com.test.demo.myapp.activity.CardsActivity;
@@ -23,6 +23,7 @@ import com.test.demo.myapp.activity.RecyclerTestActivity;
 import com.test.demo.myapp.activity.ReprintTestActivity;
 import com.test.demo.myapp.activity.ScrollingActivity;
 import com.test.demo.myapp.activity.TextViewTesterActivity;
+import com.test.demo.myapp.activity.ViewAsListActivity;
 import com.test.demo.myapp.activity.ZxingGenerateBarcodeActvity;
 import com.test.demo.myapp.programmatic.ProgrammaticLayouts;
 
@@ -116,6 +117,10 @@ public class MainActivity extends AppCompatActivity {
 
     public void startRecycleViewTester(View target){
         startActivity(new Intent(this, RecyclerTestActivity.class));
+    }
+
+    public void startViewListActivity(View target){
+        startActivity(new Intent(this, ViewAsListActivity.class));
     }
 
     private void deepLinkUriLaunch(){

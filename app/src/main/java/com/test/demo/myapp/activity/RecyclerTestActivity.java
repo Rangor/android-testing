@@ -28,12 +28,12 @@ public class RecyclerTestActivity extends AppCompatActivity {
         recyclerView.setLayoutManager(layoutManager);
 
         // specify an adapter (see also next example)
-        ListObject[] listObjects = new ListObject[1000];
+        ListObject[] listObjects = new ListObject[30000];
         for(int i = 0; i < listObjects.length; i++){
             ListObject listObject = new ListObject();
             listObject.setText("Hello");
             listObject.setType(ListObject.Type.ITEM);
-            listObject.setUrl("http://www.shunvmall.com/data/out/193/47806048-random-image.png");
+            listObject.setUrl("http://eskipaper.com/images/large-2.jpg");
             listObjects[i] = listObject;
         }
         adapter = new MyAdapter(listObjects, getApplicationContext());
