@@ -23,7 +23,7 @@ public class ViewAsListActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_view_as_list);
         rootLayout = (ViewGroup) findViewById(R.id.root_linear_layout);
-        for (int i = 0; i < PRETTY_SMOOTH; i++) {
+        for (int i = 0; i < BREAKS_THE_APP; i++) {
             addElement();
         }
     }
