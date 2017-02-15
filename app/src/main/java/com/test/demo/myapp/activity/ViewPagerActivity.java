@@ -30,7 +30,7 @@ public class ViewPagerActivity extends AppCompatActivity implements ContentFragm
 
     @Override
     public void onFragmentInteraction(Uri uri) {
-        
+
     }
 
     /**
@@ -44,7 +44,35 @@ public class ViewPagerActivity extends AppCompatActivity implements ContentFragm
 
         @Override
         public Fragment getItem(int position) {
-            return new ContentFragment();
+
+            int layout = 0;
+
+            if(position == 0){
+                layout = R.layout.activity_picasso_testing_actvity;
+            }
+
+            if(position == 1){
+                layout = R.layout.activity_cards;
+            }
+
+            if(position == 2){
+                layout = R.layout.activity_chrome_custom_tab;
+            }
+
+            if(position == 3){
+                layout = R.layout.activity_deeplink;
+            }
+
+            if(position == 4){
+                layout = R.layout.activity_large_text_input;
+            }
+
+            if(position == 5){
+                layout = R.layout.activity_glide_tester;
+            }
+
+            Fragment fragment = ContentFragment.newInstance(layout);
+            return fragment;
         }
 
         @Override
