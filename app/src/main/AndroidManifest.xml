@@ -103,6 +103,8 @@
         </activity>
         <activity android:name=".activity.ViewAsListActivity">
         </activity>
+        <activity android:name=".activity.ViewPagerActivity">
+        </activity>
     </application>
 
 </manifest>

@@ -24,6 +24,7 @@ import com.test.demo.myapp.activity.ReprintTestActivity;
 import com.test.demo.myapp.activity.ScrollingActivity;
 import com.test.demo.myapp.activity.TextViewTesterActivity;
 import com.test.demo.myapp.activity.ViewAsListActivity;
+import com.test.demo.myapp.activity.ViewPagerActivity;
 import com.test.demo.myapp.activity.ZxingGenerateBarcodeActvity;
 import com.test.demo.myapp.programmatic.ProgrammaticLayouts;
 
@@ -121,6 +122,10 @@ public class MainActivity extends AppCompatActivity {
 
     public void startViewListActivity(View target){
         startActivity(new Intent(this, ViewAsListActivity.class));
+    }
+
+    public void startViewPagerActivity(View target){
+        startActivity(new Intent(this, ViewPagerActivity.class));
     }
 
     private void deepLinkUriLaunch(){
