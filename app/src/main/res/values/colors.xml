@@ -6,4 +6,6 @@
     <color name="colorWhite">#ffffff</color>
     <color name="colorBlack">#000000</color>
     <color name="colorLightBlue">#29688f</color>
+    <color name="colorLightRed">#af4242</color>
+    <color name="colorLightGreen">#65b653</color>
 </resources>

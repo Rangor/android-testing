@@ -12,8 +12,6 @@ public class ContentFragment extends Fragment {
 
     private static final String LAYOUT_PARAM = "layoutparam";
 
-    private int layoutParam;
-
     int intLayout;
 
     private OnFragmentInteractionListener mListener;

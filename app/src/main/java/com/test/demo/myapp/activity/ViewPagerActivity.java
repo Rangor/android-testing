@@ -8,13 +8,15 @@ import android.support.v4.app.FragmentStatePagerAdapter;
 import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
+import android.widget.Toast;
 
 import com.test.demo.myapp.R;
 import com.test.demo.myapp.fragments.ContentFragment;
 
 public class ViewPagerActivity extends AppCompatActivity implements ContentFragment.OnFragmentInteractionListener {
 
-    private static final int NUM_PAGES = 5;
+    private static final int NUM_PAGES = 3;
 
     private ViewPager viewPager;
     private PagerAdapter pagerAdapter;
@@ -33,6 +35,10 @@ public class ViewPagerActivity extends AppCompatActivity implements ContentFragm
 
     }
 
+    public void finishWizardClick(View target){
+        Toast.makeText(getApplicationContext(), "You tried to finish the Wizard, the wonderfull Wizard of Oz", Toast.LENGTH_SHORT).show();
+    }
+
     /**
      * A simple pager adapter that represents 5 ScreenSlidePageFragment objects, in
      * sequence.
@@ -48,27 +54,15 @@ public class ViewPagerActivity extends AppCompatActivity implements ContentFragm
             int layout = 0;
 
             if(position == 0){
-                layout = R.layout.activity_picasso_testing_actvity;
+                layout = R.layout.wizard_1;
             }
 
             if(position == 1){
-                layout = R.layout.activity_cards;
+                layout = R.layout.wizard_2;
             }
 
             if(position == 2){
-                layout = R.layout.activity_chrome_custom_tab;
-            }
-
-            if(position == 3){
-                layout = R.layout.activity_deeplink;
-            }
-
-            if(position == 4){
-                layout = R.layout.activity_large_text_input;
-            }
-
-            if(position == 5){
-                layout = R.layout.activity_glide_tester;
+                layout = R.layout.wizard_3;
             }
 
             Fragment fragment = ContentFragment.newInstance(layout);
