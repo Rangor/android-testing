@@ -1,7 +1,6 @@
 package com.test.demo.myapp;
 
 import android.content.Intent;
-import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -11,6 +10,7 @@ import com.test.demo.myapp.activity.ChromeCustomTabActivity;
 import com.test.demo.myapp.activity.DialogTestingActivity;
 import com.test.demo.myapp.activity.GlideTesterActivity;
 import com.test.demo.myapp.activity.ImagePickerActivity;
+import com.test.demo.myapp.activity.IntentFilterTestingActivity;
 import com.test.demo.myapp.activity.ListActivity;
 import com.test.demo.myapp.activity.MemoryTesterActivity;
 import com.test.demo.myapp.activity.MyImageFetcher;
@@ -128,10 +128,7 @@ public class MainActivity extends AppCompatActivity {
         startActivity(new Intent(this, ViewPagerActivity.class));
     }
 
-    private void deepLinkUriLaunch(){
-        Uri uri = Uri.parse("example://gizmos");
-        Intent deeplink = new Intent(Intent.ACTION_VIEW);
-        deeplink.setData(uri);
-        startActivity(deeplink);
+    public void startIntentTestingActivity(View target){
+        startActivity(new Intent(this, IntentFilterTestingActivity.class));
     }
 }
