@@ -20,6 +20,7 @@
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
+
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
             <intent-filter>
@@ -115,6 +116,8 @@
         <activity android:name=".activity.ViewPagerActivity">
         </activity>
         <activity android:name=".activity.IntentFilterTestingActivity">
+        </activity>
+        <activity android:name=".activity.ConstraintLayoutTesting">
         </activity>
     </application>
 

@@ -28,7 +28,7 @@ public class RecyclerTestActivity extends AppCompatActivity {
         recyclerView.setLayoutManager(layoutManager);
 
         // specify an adapter (see also next example)
-        ListObject[] listObjects = new ListObject[30000];
+        ListObject[] listObjects = new ListObject[20];
         for(int i = 0; i < listObjects.length; i++){
             ListObject listObject = new ListObject();
             listObject.setText("Hello");

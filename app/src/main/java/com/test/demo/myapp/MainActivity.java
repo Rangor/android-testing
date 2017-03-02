@@ -7,6 +7,7 @@ import android.view.View;
 
 import com.test.demo.myapp.activity.CardsActivity;
 import com.test.demo.myapp.activity.ChromeCustomTabActivity;
+import com.test.demo.myapp.activity.ConstraintLayoutTesting;
 import com.test.demo.myapp.activity.DialogTestingActivity;
 import com.test.demo.myapp.activity.GlideTesterActivity;
 import com.test.demo.myapp.activity.ImagePickerActivity;
@@ -130,5 +131,9 @@ public class MainActivity extends AppCompatActivity {
 
     public void startIntentTestingActivity(View target){
         startActivity(new Intent(this, IntentFilterTestingActivity.class));
+    }
+
+    public void startConstraintLayoutTesting(View target){
+        startActivity(new Intent(this, ConstraintLayoutTesting.class));
     }
 }
