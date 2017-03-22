@@ -119,6 +119,8 @@
         </activity>
         <activity android:name=".activity.ConstraintLayoutTesting">
         </activity>
+        <activity android:name=".activity.CustomSearchFieldActivity">
+        </activity>
     </application>
 
 </manifest>
